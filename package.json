@@ -3,10 +3,23 @@
   "version": "0.0.1",
   "description": "Require any file extension of interpret module.",
   "author": "Ricardo Ferro <ricardo.ferro@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rferro/interpreting.git"
+  },
+  "bugs": {
+    "url": "http://github.com/rferro/interpreting/issues"
+  },
   "main": "lib",
   "engines": {
-    "node": ">= 4.0.0"
+    "node": ">=4"
   },
+  "keywords": [
+    "interpret",
+    "require",
+    "babel",
+    "coffee"
+  ],
   "scripts": {
     "build": "babel src -d lib",
     "test": "jest",
