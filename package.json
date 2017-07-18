@@ -1,0 +1,36 @@
+{
+  "name": "interpreting",
+  "version": "0.0.1",
+  "description": "Require any file extension of interpret module.",
+  "author": "Ricardo Ferro <ricardo.ferro@gmail.com>",
+  "main": "lib",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "standard": "standard | snazzy",
+    "standard:fix": "standard --fix | snazzy"
+  },
+  "dependencies": {
+    "interpret": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-jest": "^20.0.3",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.24.1",
+    "jest": "^20.0.4",
+    "standard": "^10.0.2"
+  },
+  "standard": {
+    "ignore": [
+      "lib",
+      "test"
+    ]
+  },
+  "jest": {
+    "notify": true,
+    "verbose": true
+  },
+  "license": "MIT"
+}
