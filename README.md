@@ -1,5 +1,5 @@
 
-# interpreting [![Build Status](https://api.travis-ci.org/rferro/interpreting.svg)](http://travis-ci.org/rferro/interpreting)
+# interpreting [![Build Status](https://api.travis-ci.org/rferro/interpreting.svg)](http://travis-ci.org/rferro/interpreting) [![dependencies Status](https://david-dm.org/rferro/interpreting/status.svg)](https://david-dm.org/rferro/interpreting)
 
 > Require any file extension of interpret module.
 
