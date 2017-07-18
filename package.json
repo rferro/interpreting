@@ -4,6 +4,9 @@
   "description": "Require any file extension of interpret module.",
   "author": "Ricardo Ferro <ricardo.ferro@gmail.com>",
   "main": "lib",
+  "engines": {
+    "node": ">= 4.0.0"
+  },
   "scripts": {
     "build": "babel src -d lib",
     "test": "jest",
