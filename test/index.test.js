@@ -1,5 +1,5 @@
 
-import interpreting from '../src'
+import interpreting from '../'
 
 let data1 = './test/files/data.1'
 let data2 = './test/files/data.2'
@@ -47,8 +47,36 @@ describe('success', () => {
     expect(data).toContainEqual({ json: 2 })
   })
 
+  test('join single', () => {
+    let data = interpreting(data1, {
+      multiple: true,
+      join: true
+    })
+
+    expect(data)
+      .toEqual({
+        js: 1,
+        babel: 1,
+        json: 1
+      })
+  })
+
+  test('join multiple', () => {
+    let data = interpreting([data1, data2], {
+      multiple: true,
+      join: true
+    })
+
+    expect(data)
+      .toEqual({
+        js: 2,
+        babel: 2,
+        json: 2
+      })
+  })
+
   test('path not found should return a empty object', () => {
-    expect(interpreting(dataNotExists)).toEqual({})
+    expect(interpreting(dataNotExists)).toBeNull()
   })
 })
 

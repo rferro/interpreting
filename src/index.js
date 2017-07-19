@@ -33,9 +33,15 @@ export default function interpreting (paths, options) {
   }
 
   if (options.multiple) {
+    if (options.join) {
+      entries = entries.reduce((result, value) => {
+        Object.assign(result, value)
+        return result
+      }, {})
+    }
     return entries
   } else {
-    return entries[0] || {}
+    return entries[0] || null
   }
 }
 
