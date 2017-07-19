@@ -18,7 +18,18 @@
     "interpret",
     "require",
     "babel",
-    "coffee"
+    "coffee",
+    "json",
+    "json5",
+    "markdown",
+    "md",
+    "es6",
+    "jsx",
+    "yml",
+    "yaml",
+    "typescript",
+    "ts",
+    "xml"
   ],
   "scripts": {
     "build": "babel src -d lib",
@@ -36,6 +47,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.24.1",
     "jest": "^20.0.4",
+    "snazzy": "^7.0.0",
     "standard": "^10.0.2"
   },
   "standard": {
