@@ -3,6 +3,8 @@ import interpreting from '../'
 
 let data1 = './test/files/data.1'
 let data2 = './test/files/data.2'
+let dataFn = './test/files/data.fn'
+let dataNumber = './test/files/data.number'
 let dataNotExists = 'notExists'
 let dataMissing = './test/files/data.missing'
 
@@ -75,13 +77,23 @@ describe('success', () => {
       })
   })
 
-  test('path not found should return a empty object', () => {
+  test('path not found should return a empty object when !options.required', () => {
     expect(interpreting(dataNotExists)).toBeNull()
+  })
+
+  test('function return', () => {
+    expect(typeof interpreting(dataFn))
+      .toBe('function')
+  })
+
+  test('number return', () => {
+    expect(typeof interpreting(dataNumber))
+      .toBe('number')
   })
 })
 
 describe('errors', () => {
-  test('path not found should throws a error', () => {
+  test('path not found should throws a error when options.required', () => {
     expect(() => {
       interpreting(dataNotExists, { required: true })
     }).toThrow(/^No files found/)
