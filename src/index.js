@@ -39,6 +39,7 @@ export default function interpreting (paths, options) {
         return result
       }, {})
     }
+
     return entries
   } else {
     return entries[0] || null
