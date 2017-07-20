@@ -4,12 +4,19 @@ import path from 'path'
 
 import interpret from 'interpret'
 
-let interpretExts = Object.keys(interpret.extensions).sort((a, b) => {
+const interpretExts = Object.keys(interpret.extensions).sort((a, b) => {
   return a === '.js' ? -1 : b === '.js' ? 1 : a.localeCompare(b)
 })
 
-export default function interpreting (paths, options) {
+module.exports = interpreting
+module.exports.extensions = interpretExts
+
+function interpreting (paths, options) {
   options = options || {}
+
+  if (!paths) {
+    throw new Error('Path is required')
+  }
 
   if (!Array.isArray(paths)) {
     paths = [paths]
