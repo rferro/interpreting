@@ -109,6 +109,10 @@ If `true` and `multiple` is true, returns the `Object.assign()` result for all f
 
 - [interpret](https://github.com/js-cli/js-interpret) - A dictionary of file extensions and associated module loaders.
 
+## Authors
+
+- Ricardo Ferro <ricardo.ferro@gmail.com>
+
 ## License
 
 MIT
