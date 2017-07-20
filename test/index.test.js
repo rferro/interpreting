@@ -93,6 +93,12 @@ describe('success', () => {
 })
 
 describe('errors', () => {
+  test('throws a error without args', () => {
+    expect(() => {
+      interpreting()
+    }).toThrow(/^Path is required/)
+  })
+
   test('path not found should throws a error when options.required', () => {
     expect(() => {
       interpreting(dataNotExists, { required: true })
