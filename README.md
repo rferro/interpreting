@@ -60,10 +60,10 @@ import interpreting from 'interpreting'
 
 ### Examples
 
-- config.babel.js
-  ```js
-  export const value = 1
-  ```
+```js
+// config.babel.js
+export const value = 1
+```
 
 ```js
 interpreting('./config')
