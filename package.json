@@ -1,7 +1,7 @@
 {
   "name": "interpreting",
   "version": "0.0.1",
-  "description": "Require any file extension of interpret module.",
+  "description": "Require any file extension of interpret dictionary.",
   "author": "Ricardo Ferro <ricardo.ferro@gmail.com>",
   "repository": {
     "type": "git",
