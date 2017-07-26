@@ -3,7 +3,13 @@
 
 > Require any file extension of interpret dictionary.
 
-[![Version npm](https://img.shields.io/npm/v/interpreting.svg?style=flat)](https://www.npmjs.com/package/interpreting) [![NPM Week Downloads](https://img.shields.io/npm/dw/interpreting.svg?style=flat)](https://www.npmjs.com/package/interpreting) [![Build Status](https://img.shields.io/travis/rferro/interpreting.svg?style=flat)](https://travis-ci.org/rferro/interpreting) [![Dependencies](https://img.shields.io/david/rferro/interpreting.svg?style=flat)](https://david-dm.org/rferro/interpreting) [![Dev Dependencies](https://img.shields.io/david/dev/rferro/interpreting.svg?style=flat)](https://david-dm.org/rferro/interpreting?type=dev) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat)](https://standardjs.com)
+[![npm][npm]][npm-url]
+[![node][node]][node-url]
+[![npmd][npmd]][npmd-url]
+[![tests][tests]][tests-url]
+[![deps][deps]][deps-url]
+[![ddeps][ddeps]][ddeps-url]
+[![standard][standard]][standard-url]
 
 Require using the dictionary of file extensions and associated module loaders from [interpret](https://github.com/js-cli/js-interpret) dictionary. Useful, for example, to allow config files in any supported file extension, like requiring webpack config file just doing `interpreting('./webpack.config')`.
 
@@ -116,3 +122,24 @@ If `true` and `multiple` is true, returns the `Object.assign()` result for all f
 ## License
 
 MIT
+
+[npm]: https://img.shields.io/npm/v/interpreting.svg?style=flat
+[npm-url]: https://npmjs.com/package/interpreting
+
+[node]: https://img.shields.io/node/v/interpreting.svg?style=flat
+[node-url]: https://nodejs.org
+
+[npmd]: https://img.shields.io/npm/dw/interpreting.svg?style=flat
+[npmd-url]: https://www.npmjs.com/package/interpreting
+
+[deps]: https://img.shields.io/david/rferro/interpreting.svg?style=flat
+[deps-url]: https://david-dm.org/rferro/interpreting
+
+[ddeps]: https://img.shields.io/david/dev/rferro/interpreting.svg?style=flat
+[ddeps-url]: https://david-dm.org/rferro/interpreting?type=dev
+
+[tests]: https://img.shields.io/travis/rferro/interpreting.svg?style=flat
+[tests-url]: https://travis-ci.org/rferro/interpreting
+
+[standard]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat
+[standard-url]: https://standardjs.com
